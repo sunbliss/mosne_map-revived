@@ -1,0 +1,89 @@
+body {
+		overflow: hidden;
+	}
+
+	#map{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    }
+
+	h1{
+	font-size: 200%;
+	margin: 0;
+	}
+	
+	h2{
+	font-size: 150%;
+	padding-bottom: 1em;
+	}
+	
+	h3{
+	font-size: 120%;
+	padding-bottom: 1em;
+	}
+
+	.maplocation{
+	background: #eee;
+	margin-left: 10px;
+	margin-top: 10px;
+	}
+	
+	.infobox{
+	    margin-top: -50px;
+	}
+
+	#markers_list{
+	visibility: hidden;
+	}
+	
+	.m_tooltip{
+	position: absolute;
+	text-align: center;
+	left: 0;
+	top: 0;
+	z-index: -2;
+	color: #FFFFFF;
+    float: left;
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #313436;
+    text-shadow: 0px 0px 3px #000;
+       -moz-border-radius: 5px;  
+    -webkit-border-radius: 5px; 
+            border-radius: 5px;    
+       -moz-box-shadow: 0px 2px 8px 0px #fff; /* FF3.5+ */
+    -webkit-box-shadow: 0px 2px 8px 0px #fff; /* Saf3.0+, Chrome */
+            box-shadow: 0px 2px 8px 0px #fff;       
+	background-image: -webkit-linear-gradient(top, rgba(31,34,36,.9), rgba(0, 0, 0, 0.7)); 
+    background-image:    -moz-linear-gradient(top, rgba(31,34,36,.9), rgba(0, 0, 0, 0.7)); 
+    background-image:    -moz-linear-gradient(top, rgba(31,34,36,.9), rgba(0, 0, 0, 0.7));
+    background-image:     -ms-linear-gradient(top, rgba(31,34,36,.9), rgba(0, 0, 0, 0.7));
+    background-image:      -o-linear-gradient(top, rgba(31,34,36,.9), rgba(0, 0, 0, 0.7)); 
+    background-image:         linear-gradient(top, rgba(31,34,36,.9), rgba(0, 0, 0, 0.7));
+    }
+
+    .no-rgba .m_tooltip{
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#313436', EndColorStr='#222526');
+    }
+    
+    .no-cssgradients .m_tooltip{
+        background-color: #313436;
+    }
+    	
+	.m_tooltip p{
+	margin: 0;
+	font-size: 16px;
+	}
+	
+@media screen and (max-device-width: 480px) {
+
+ html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+}
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+}
